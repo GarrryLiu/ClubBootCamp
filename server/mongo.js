@@ -1,7 +1,6 @@
 require('dotenv').config()
 const mongoose=require("mongoose")
 mongoose.connect(process.env.CONN_STRING)
-// mongoose.connect("mongodb://localhost:27017/findyourclubDB")
 .then(()=>{
     console.log("mongodb connected");
 })
